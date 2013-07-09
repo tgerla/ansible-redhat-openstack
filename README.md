@@ -296,7 +296,7 @@ the hypervisors (compute nodes) are deployed on the other nodes.
 
 #### Prerequisites:
 
-- CentOS version 6.4 (64-bit)
+- Red Hat Enterprise Linux or CentOS version 6.4 (64-bit)
 - Kernel Version: 2.6.32-358.2.1.el6.x86_64 
 - Controller Node: Should have an extra NIC (for external traffic routing) and
 an extra disk or partition for Cinder Volumes.
