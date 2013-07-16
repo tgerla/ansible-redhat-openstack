@@ -13,6 +13,9 @@ nova_libvirt_type: qemu
 quantum_db_pass: quantum
 quantum_external_interface: eth2
 
+# Interface for management, API and GRE tunnels for instance traffic
+iface: eth0
+
 cinder_db_pass: cinder
 cinder_volume_dev: /dev/vda3
 
