@@ -21,7 +21,6 @@
   with_items:
    - openstack-nova-api
    - openstack-nova-scheduler
-   - openstack-nova-network
    - openstack-nova-cert
    - openstack-nova-console
    - openstack-nova-conductor
