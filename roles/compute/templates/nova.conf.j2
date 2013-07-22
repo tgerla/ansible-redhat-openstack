@@ -50,10 +50,7 @@ quantum_admin_auth_url = http://{{ head_node_ip }}:35357/v2.0
 quantum_auth_strategy = keystone
 quantum_admin_tenant_name = admin
 quantum_url = http://{{ head_node_ip }}:9696/
-#libvirt_vif_driver = nova.virt.libvirt.vif.LibvirtHybridOVSBridgeDriver
-libvirt_vif_driver = nova.virt.libvirt.vif.LibvirtOpenVswitchDriver
-#security_group_api=quantum
-#firewall_driver=nova.virt.firewall.NoopFirewallDriver
+libvirt_vif_driver = nova.virt.libvirt.vif.LibvirtHybridOVSBridgeDriver
 service_quantum_metadata_proxy=true
 libvirt_cpu_mode=host-passthrough 
 
