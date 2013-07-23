@@ -30,6 +30,9 @@
   template: src=dhcp_agent.ini.j2 dest=/etc/quantum/dhcp_agent.ini
   notify:  restart quantum
 
+- name: Copy the quantum metadata agent configuration file
+  template: src=metadata_agent.ini.j2 dest=/etc/quantum/metadata_agent.ini
+  notify: restart quantum
 
 - name: Copy the quantum ovs agent configuration files 
   template: src=ovs_quantum_plugin.ini.j2 dest=/etc/quantum/plugins/openvswitch/ovs_quantum_plugin.ini
@@ -57,6 +60,7 @@
    - quantum-server
    - quantum-dhcp-agent
    - quantum-openvswitch-agent
+   - quantum-metadata-agent
 
 - local_action: pause seconds=20
 

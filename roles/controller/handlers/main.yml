@@ -15,7 +15,6 @@
   with_items:
    - openstack-nova-api
    - openstack-nova-scheduler
-   - openstack-nova-network
    - openstack-nova-cert
    - openstack-nova-console
    - openstack-nova-conductor
@@ -26,6 +25,7 @@
    - quantum-server
    - quantum-l3-agent
    - quantum-dhcp-agent
+   - quantum-metadata-agent
    - quantum-openvswitch-agent
 
 - name: restart cinder
