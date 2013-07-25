@@ -54,6 +54,9 @@
   template: src=nova.conf.j2 dest=/etc/nova/nova.conf
   notify: restart nova
 
+- name: Ensure quantum-ovs-cleanup runs at boot
+  service: name=quantum-ovs-cleanup enabled=yes
+
 - name: Start the quantum services
   service: name={{ item }} state=started enabled=yes
   with_items:
